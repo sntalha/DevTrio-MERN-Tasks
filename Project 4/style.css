@@ -1,0 +1,31 @@
+.section-padding {
+    padding: 70px;
+}
+
+/* Scrollbar */
+body {
+    --sb-track-color: #fffdec;
+    --sb-thumb-color: #fb3;
+    --sb-size: 16px;
+}
+
+body::-webkit-scrollbar {
+    width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 7px;
+
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    body {
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
+}

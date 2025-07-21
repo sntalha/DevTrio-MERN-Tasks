@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+.body-container {
+    background: url(./assets/imgs/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    padding: 0px 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    min-height: 80px;
+}
+
+nav img {
+    max-width: 150px;
+}
+
+.nav-links {
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+    font-weight: lighter;
+    display: flex;
+}
+
+.nav-links li {
+    padding: 6px;
+    margin: 5px;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.nav-links li:hover {
+    color: #E50914;
+    cursor: pointer;
+}
+
+.search-bar {
+    border: 1px solid rgb(168, 165, 165);
+    border-radius: 3px;
+    padding: 5px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 2px 7px;
+}
+
+.search-bar input::placeholder {
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 80px);
+    width: 400px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.content p {
+    color: #fff;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.btn-container {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-container button {
+    padding: 5px 20px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #E50914;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+
+.btn-container button:last-child {
+    background-color: #000;
+    color: #fff;
+    border: 0.5px solid gray;
+}
+.btn-container button:hover{
+    cursor: pointer;
+}
+.btn-container button:last-child:hover {
+    background-color: #E50914;
+    border: 0.5px solid #E50914;
+}
+
+.container figure img {
+    width: 250px;
+}
+
+.details span {
+    color: gray;
+    font-size: 12px;
+    padding: 2px 6px;
+    margin-right: 0px;
+    border-right: 1px solid gray;
+}
+
+.details span small {
+    background-color: #E50914;
+    border-radius: 3px;
+    color: #fff;
+    padding: 3px 4px;
+    font-size: 10px;
+}
+
+.details span:last-child {
+    border-right: none;
+}
+
+@media (max-width: 935px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+@media (max-width: 575.98px) {
+    .body-container{
+        padding: 0px 50px;
+    }
+}
+@media (max-width: 485px) {
+    .body-container{
+        padding: 0px 5px;
+    }
+}
+@media (max-width: 380px) {
+    .body-container{
+        padding: 0px;
+    }
+}
+
+

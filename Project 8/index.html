@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz Application</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <!-- Welcome Card -->
+        <div class="welcome" id="welcome">
+            <h2 class="headbox text-center"><img src="./quiz logo.png" alt="Quiz Logo"></h2>
+            <h4 class="quizhead">Programming Quiz</h4>
+            <p class="cardtxt">Enter Your Name</p>
+            <div class="box1">
+                <input class="name" id="username" type="text" placeholder="Enter your name here.. ">
+                <p onclick="startQuiz()" class="playbtn mt-3 mb-3">Play Now</p>
+            </div>
+        </div>
+
+        <!-- Question Card -->
+        <div class="question" id="question">
+            <h3 class="quizhead headbox">Question</h3>
+            <p class="text-light text-center fs-5" id="questionTxt"></p>
+            <div class="options" id="options"></div>
+            <img src="./next-arrow.jpg" class="nextbtn" onclick="nextQuestion()">
+            <p class="text-light text-center" id="counter"></p>
+        </div>
+
+        <!-- Result Card -->
+        <div class="result" id="result">
+            <h3 class="quizhead headbox">Your Quiz is Finished</h3>
+            <p class="cardtxt fs-3">RESULT</p>
+            <p class="text-light text-center fs-4" id="usernameResult"></p>
+            <p class="score" id="score"></p>
+            <p onclick="restartQuiz()" class="playbtn mt-3 mb-3">Restart Quiz</p>
+        </div>
+
+    </div>
+
+
+
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

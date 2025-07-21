@@ -1,0 +1,119 @@
+body {
+    background: linear-gradient(180deg, #E486EE 0%, #5200FF 99%);
+}
+
+.container-fluid {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome,
+.question,
+.result {
+    width: 500px;
+    background: #000E56;
+    border-radius: 30px;
+}
+
+.headbox {
+    background: #120084;
+    border-radius: 30px 30px 0px 0px;
+    padding: 10px;
+}
+
+.quizhead {
+    font-family: 'Angkor';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.cardtxt {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 49px;
+    text-align: center;
+    color: #05FF00;
+}
+
+.box1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name {
+    width: 70%;
+    height: 35px;
+    margin: auto;
+    background: #5200FF;
+    border-radius: 5px;
+    border-color: #5200FF;
+    color: white;
+}
+
+.name::placeholder {
+    color: #FFFFFF;
+}
+
+.playbtn {
+    width: 100px;
+    margin: auto;
+    font-family: 'Arial';
+    font-weight: 500;
+    text-align: center;
+    text-decoration: underline;
+    color: #FFFFFF;
+    background: none;
+    outline-width: 0px;
+    cursor: pointer;
+}
+
+.options {
+    width: 400px;
+    margin: auto;
+}
+
+.option-container {
+    background: #5200FF;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.option-container label {
+    color: white;
+    cursor: pointer;
+}
+
+.nextbtn {
+    width: 50px;
+    margin: auto;
+    margin-right: 50px;
+    display: block;
+    cursor: pointer;
+}
+
+.score {
+    background: #5200FF;
+    border-radius: 15px;
+    width: 150px;
+    margin: auto;
+    font-family: 'Arial';
+    font-weight: 1000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.question,
+.result {
+    display: none;
+}

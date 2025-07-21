@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body>
+    <div id="navbar">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Schedule/schedule.html">Schedule</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="../Faqs/faq.html">Faqs</a></li>
+        </ul>
+    </div>
+    <hr>
+    <h1>Contact Form</h1>
+    <form action="./thanks.html">
+
+        <label for="fullname">Enter Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Dev Trio"><br><br>
+
+        <label for="email">Enter Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="abc@gmail.com"><br><br>
+
+        <label for="phone">Enter Your Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="0310-0000000"><br><br>
+
+        <label>Select Your Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Others</label><br><br>
+
+        <label for="id">Your ID:</label>
+        <input type="text" id="id" name="id" value="102030" readonly><br><br>
+
+        <label for="country">Select Country:</label>
+        <select id="country" name="country">
+            <option value="select">Select Country</option>
+            <option value="pakistan">Pakistan</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+        </select><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset Form">
+    </form>
+    <hr>
+    <p>&copy;2024 Devtrio. All rights reserved</p>
+</body>
+
+</html>

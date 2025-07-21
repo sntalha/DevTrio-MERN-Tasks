@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(147, 82, 209);
+}
+.navbar {
+    width: 100%;
+    height: 50px;
+    margin: 0px;
+    position: fixed;
+    z-index: 5;
+}
+.navbar h1{
+    color: white;
+    background-color: black;
+    padding: 5px;
+    height: 40px;
+}
+.sidebar{
+    background-color: aliceblue;
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: -300px;
+    z-index: 5;
+    transition: 0.3s;
+}
+.sidebar h2{
+    text-align: center;
+    text-decoration: underline;
+    padding: 5px;
+    margin-top: 10px;
+}
+.sidebar ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.sidebar ul li{
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+} 
+.sidebar iframe{
+    width: 240px;
+    height: 150px;
+}
+.navbar:hover+.sidebar{
+    right: 0px;
+}
+.bg-video video{
+    width: 100%;
+    position: relative;
+    top: 40px;
+    z-index: 1;
+}
+header {
+    color: white;
+    text-align: center;
+    padding: 35px;
+    margin-top: 20px;
+}
+header span{
+    color: yellow;
+}
+.back-to-top{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+.card{
+    width: 300px;
+    height: 300px;
+    margin: 4px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: beige;
+    transition: 0.3s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.card:hover{
+    margin: 0.5px;
+}
+.card-img img{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.card-content{
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.card-content button{
+    color: white;
+    border: 0px;
+    padding: 10px;
+    border-radius: 2px ;
+    margin-top: 5px;
+    background-color: rgb(147, 82, 209);
+    position: absolute;
+    bottom: 6px;
+}
+button:hover{
+    background-color: rgb(80, 40, 117);
+    cursor: pointer;
+}
+.map h1{
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+.map h1 span{
+    color: yellow;
+}
+.map iframe{
+    display: flex;
+    margin: auto;
+    width: 800px;
+}
+footer p{
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
